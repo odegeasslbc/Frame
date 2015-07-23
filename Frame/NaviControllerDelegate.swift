@@ -16,11 +16,11 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate{
         return CircleTransitionAnimator()
     }
     
-    /*
+    
     func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return self.interactionController
     }
-    */
+
     func swipLeft(sender:UISwipeGestureRecognizer){
         /* used to animat between vc in navi controllor
         if(self.navigationController?.viewControllers.count <= 1){
@@ -39,11 +39,34 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate{
 
     }
     
+    func panned(gestureRecognizer: UIPanGestureRecognizer){
+        switch gestureRecognizer.state {
+        case .Began:
+            self.interactionController = UIPercentDrivenInteractiveTransition()
+            drawerVc.toggleDrawerWithSide(JVFloatingDrawerSide.Left, animated: true, completion: nil)
+        case .Changed:
+            var translation = gestureRecognizer.translationInView(drawerVc.view)
+            var completionProgress = translation.x / CGRectGetWidth(drawerVc.view.bounds)
+            self.interactionController?.updateInteractiveTransition(completionProgress)
+        case .Ended:
+            if gestureRecognizer.velocityInView(drawerVc.view).x > 0 {
+                self.interactionController?.finishInteractiveTransition()
+            }
+            else{
+                self.interactionController?.cancelInteractiveTransition()
+            }
+            self.interactionController = nil
+        default:
+            self.interactionController?.cancelInteractiveTransition()
+            self.interactionController = nil
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        /*
+        
         var pan = UIPanGestureRecognizer(target: self, action: "panned:")
-        */
+
         var swipLeft = UISwipeGestureRecognizer(target: self, action: "swipLeft:")
         swipLeft.direction = UISwipeGestureRecognizerDirection.Left
         
@@ -52,7 +75,7 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate{
         
         self.navigationController!.view.addGestureRecognizer(swipLeft)
         self.navigationController!.view.addGestureRecognizer(swipRight)
-        
+        //self.navigationController?.view.addGestureRecognizer(pan)
     }
 }
 

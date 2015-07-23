@@ -184,10 +184,10 @@ static const CGFloat kJVDefaultViewContainerWidth = 280.0;
 
 - (void)applyShadowToCenterViewContainer {
     CALayer *layer = self.centerViewContainer.layer;
-    layer.shadowRadius  = 20.0;
+    layer.shadowRadius  = 8.0;
     layer.shadowColor   = [UIColor blackColor].CGColor;
-    layer.shadowOpacity = 0.4;
-    layer.shadowOffset  = CGSizeMake(0.0, 0.0);
+    layer.shadowOpacity = 0.2;
+    layer.shadowOffset  = CGSizeMake(0.0, 8.0);
     layer.masksToBounds = NO;
     
     [self updateShadowPath];

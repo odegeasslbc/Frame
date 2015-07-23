@@ -25,9 +25,9 @@ static const CGFloat kJVCenterViewDestinationScale = 0.8;
 - (void)setup {
     // Defaults
     self.animationDelay = 0.0;
-    self.animationDuration = 0.8;
-    self.initialSpringVelocity = 0.0;
-    self.springDamping = 1.0;
+    self.animationDuration = 0.7;
+    self.initialSpringVelocity = 1.0;
+    self.springDamping = 0.7;
 }
 
 #pragma mark - Animator Implementations
@@ -123,11 +123,11 @@ static const CGFloat kJVCenterViewDestinationScale = 0.8;
 - (void)applyTransformsWithSide:(JVFloatingDrawerSide)drawerSide sideView:(UIView *)sideView centerView:(UIView *)centerView {
     CGFloat direction = drawerSide == JVFloatingDrawerSideLeft ? 1.0 : -1.0;
     CGFloat sideWidth = sideView.bounds.size.width;
-    CGFloat centerWidth = centerView.bounds.size.width;
+    //CGFloat centerWidth = centerView.bounds.size.width;
     CGFloat centerViewHorizontalOffset = direction * sideWidth;
-    CGFloat scaledCenterViewHorizontalOffset = direction * (sideWidth - (centerWidth) / 3.0);
+    //CGFloat scaledCenterViewHorizontalOffset = direction * (sideWidth - (centerWidth) / 2.0);
     //set the offset of each viewcontroller
-    //CGFloat scaledCenterViewHorizontalOffset = direction * 200;
+    CGFloat scaledCenterViewHorizontalOffset = direction * 200;
     
     CGAffineTransform sideTranslate = CGAffineTransformMakeTranslation(centerViewHorizontalOffset, 0.0);
     sideView.transform = sideTranslate;

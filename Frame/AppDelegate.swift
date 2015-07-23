@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         drawerVc.centerViewController = storyboard.instantiateViewControllerWithIdentifier("NaviController") as!UINavigationController
         drawerVc.rightViewController = LeftViewController()
         drawerVc.animator = JVFloatingDrawerSpringAnimator()
-        
+        drawerVc.view.backgroundColor = UIColor.whiteColor()
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = drawerVc
         self.window?.makeKeyAndVisible()
