@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6212DC3D1B60D73C00B398E6 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212DC3C1B60D73C00B398E6 /* BlueViewController.swift */; };
+		6212DC3F1B60D80B00B398E6 /* NaviControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212DC3E1B60D80B00B398E6 /* NaviControllerDelegate.swift */; };
+		6212DC411B60DF7000B398E6 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212DC401B60DF7000B398E6 /* LeftViewController.swift */; };
+		6212DC4A1B60DF8500B398E6 /* JVFloatingDrawerSpringAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6212DC451B60DF8500B398E6 /* JVFloatingDrawerSpringAnimator.m */; };
+		6212DC4B1B60DF8500B398E6 /* JVFloatingDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6212DC471B60DF8500B398E6 /* JVFloatingDrawerView.m */; };
+		6212DC4C1B60DF8500B398E6 /* JVFloatingDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6212DC491B60DF8500B398E6 /* JVFloatingDrawerViewController.m */; };
 		6299ECF41B60D2A2006EF15E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299ECF31B60D2A2006EF15E /* AppDelegate.swift */; };
-		6299ECF61B60D2A2006EF15E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299ECF51B60D2A2006EF15E /* ViewController.swift */; };
 		6299ECF91B60D2A2006EF15E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6299ECF71B60D2A2006EF15E /* Main.storyboard */; };
 		6299ECFB1B60D2A2006EF15E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6299ECFA1B60D2A2006EF15E /* Images.xcassets */; };
 		6299ECFE1B60D2A2006EF15E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6299ECFC1B60D2A2006EF15E /* LaunchScreen.xib */; };
 		6299ED0A1B60D2A2006EF15E /* FrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299ED091B60D2A2006EF15E /* FrameTests.swift */; };
+		6299ED161B60D35A006EF15E /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299ED151B60D35A006EF15E /* RedViewController.swift */; };
+		6299ED181B60D400006EF15E /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299ED171B60D400006EF15E /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +33,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6212DC3C1B60D73C00B398E6 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		6212DC3E1B60D80B00B398E6 /* NaviControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviControllerDelegate.swift; sourceTree = "<group>"; };
+		6212DC401B60DF7000B398E6 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		6212DC431B60DF8500B398E6 /* JVFloatingDrawerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerAnimation.h; sourceTree = "<group>"; };
+		6212DC441B60DF8500B398E6 /* JVFloatingDrawerSpringAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerSpringAnimator.h; sourceTree = "<group>"; };
+		6212DC451B60DF8500B398E6 /* JVFloatingDrawerSpringAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatingDrawerSpringAnimator.m; sourceTree = "<group>"; };
+		6212DC461B60DF8500B398E6 /* JVFloatingDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerView.h; sourceTree = "<group>"; };
+		6212DC471B60DF8500B398E6 /* JVFloatingDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatingDrawerView.m; sourceTree = "<group>"; };
+		6212DC481B60DF8500B398E6 /* JVFloatingDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerViewController.h; sourceTree = "<group>"; };
+		6212DC491B60DF8500B398E6 /* JVFloatingDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatingDrawerViewController.m; sourceTree = "<group>"; };
+		6212DC4D1B60DF9000B398E6 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		6299ECEE1B60D2A2006EF15E /* Frame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299ECF21B60D2A2006EF15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6299ECF31B60D2A2006EF15E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6299ECF51B60D2A2006EF15E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6299ECF81B60D2A2006EF15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6299ECFA1B60D2A2006EF15E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6299ECFD1B60D2A2006EF15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6299ED031B60D2A2006EF15E /* FrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299ED081B60D2A2006EF15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6299ED091B60D2A2006EF15E /* FrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTests.swift; sourceTree = "<group>"; };
+		6299ED151B60D35A006EF15E /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		6299ED171B60D400006EF15E /* YellowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6212DC421B60DF8500B398E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6212DC431B60DF8500B398E6 /* JVFloatingDrawerAnimation.h */,
+				6212DC441B60DF8500B398E6 /* JVFloatingDrawerSpringAnimator.h */,
+				6212DC451B60DF8500B398E6 /* JVFloatingDrawerSpringAnimator.m */,
+				6212DC461B60DF8500B398E6 /* JVFloatingDrawerView.h */,
+				6212DC471B60DF8500B398E6 /* JVFloatingDrawerView.m */,
+				6212DC481B60DF8500B398E6 /* JVFloatingDrawerViewController.h */,
+				6212DC491B60DF8500B398E6 /* JVFloatingDrawerViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6299ECE51B60D2A2006EF15E = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +110,14 @@
 		6299ECF01B60D2A2006EF15E /* Frame */ = {
 			isa = PBXGroup;
 			children = (
+				6212DC4D1B60DF9000B398E6 /* Header.h */,
+				6212DC421B60DF8500B398E6 /* Classes */,
 				6299ECF31B60D2A2006EF15E /* AppDelegate.swift */,
-				6299ECF51B60D2A2006EF15E /* ViewController.swift */,
+				6299ED151B60D35A006EF15E /* RedViewController.swift */,
+				6299ED171B60D400006EF15E /* YellowViewController.swift */,
+				6212DC3C1B60D73C00B398E6 /* BlueViewController.swift */,
+				6212DC3E1B60D80B00B398E6 /* NaviControllerDelegate.swift */,
+				6212DC401B60DF7000B398E6 /* LeftViewController.swift */,
 				6299ECF71B60D2A2006EF15E /* Main.storyboard */,
 				6299ECFA1B60D2A2006EF15E /* Images.xcassets */,
 				6299ECFC1B60D2A2006EF15E /* LaunchScreen.xib */,
@@ -212,8 +251,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6299ECF61B60D2A2006EF15E /* ViewController.swift in Sources */,
+				6299ED161B60D35A006EF15E /* RedViewController.swift in Sources */,
 				6299ECF41B60D2A2006EF15E /* AppDelegate.swift in Sources */,
+				6212DC3D1B60D73C00B398E6 /* BlueViewController.swift in Sources */,
+				6212DC411B60DF7000B398E6 /* LeftViewController.swift in Sources */,
+				6212DC3F1B60D80B00B398E6 /* NaviControllerDelegate.swift in Sources */,
+				6212DC4B1B60DF8500B398E6 /* JVFloatingDrawerView.m in Sources */,
+				6212DC4A1B60DF8500B398E6 /* JVFloatingDrawerSpringAnimator.m in Sources */,
+				6299ED181B60D400006EF15E /* YellowViewController.swift in Sources */,
+				6212DC4C1B60DF8500B398E6 /* JVFloatingDrawerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +391,7 @@
 				INFOPLIST_FILE = Frame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Frame/Header.h;
 			};
 			name = Debug;
 		};
@@ -355,6 +402,7 @@
 				INFOPLIST_FILE = Frame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Frame/Header.h;
 			};
 			name = Release;
 		};
@@ -411,6 +459,7 @@
 				6299ED0F1B60D2A2006EF15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6299ED101B60D2A2006EF15E /* Build configuration list for PBXNativeTarget "FrameTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +468,7 @@
 				6299ED121B60D2A2006EF15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
